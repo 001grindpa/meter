@@ -1,7 +1,10 @@
-```markdown
 # Meter
 
+## Overview
+
 Meter holds borrower collateral against a public rate threshold. The lender is paid only if two rate pages show the same breach inside the window. One page is not enough.
+
+## Network and contract
 
 - Network: GenLayer StudioNet
 - Chain ID: 61999 (0xf22f)
@@ -38,4 +41,3 @@ A borrower opens a position with collateral, a lender, an asset, a threshold, a 
 ## Tests
 
 The direct tests cover a borrower set as lender, distinct rate hosts, impossible dates, early liquidation and release, release blocked on `window_end`, one release after `release_after`, a single-host disagreement, and payment to the lender on a dual breach.
-```
